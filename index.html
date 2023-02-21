@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ben Feather - Web Developer</title>
+	</head>
+	<body>
+		<div id="app">
+			<div id="main">
+				<article id="card">
+					<figure class="photo">
+						<img src="/src/images/ben-feather.jpeg" alt="Ben Feather" />
+					</figure>
+
+					<main id="card__content">
+						<a
+							href="https://www.linkedin.com/in/benfeather/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="connect"
+						>
+							<span>Let's connect</span>
+
+							<svg viewBox="0 0 32 32">
+								<path
+									d="m29.9 0h-27.8c-1.1 0-2.1 1-2.1 2.1v27.7c0 1.2 1 2.2 2.1 2.2h27.7c1.2 0 2.1-1 2.1-2.1v-27.8c.1-1.1-.9-2.1-2-2.1zm-20.4 27.3h-4.8v-15.3h4.8zm-2.4-17.4c-1.5 0-2.8-1.3-2.8-2.8s1.3-2.8 2.8-2.8 2.8 1.3 2.8 2.8c0 .7-.3 1.4-.8 2-.6.5-1.3.8-2 .8zm20.2 17.4h-4.7v-7.4c0-1.8 0-4-2.5-4s-2.8 1.9-2.8 3.9v7.6h-4.7v-15.4h4.4v2.1h.1c.9-1.6 2.7-2.6 4.5-2.5 4.8 0 5.7 3.2 5.7 7.3z"
+									fill="currentColor"
+								/>
+							</svg>
+						</a>
+
+						<h1>Ben Feather</h1>
+
+						<hr class="divider mt-15 mb-20" />
+
+						<div class="copy">
+							<p>
+								I’m a web developer with over 7 years of experience in building websites and web
+								applications using various programming languages and technologies.
+							</p>
+							<p>
+								I provide various services, including web hosting, general support and updates for
+								hosted sites. I am also available for freelance work.
+							</p>
+							<p>
+								<strong>Please feel free to get in touch using my details below.</strong>
+							</p>
+						</div>
+					</main>
+
+					<div id="card__contact">
+						<p><strong>General enquiries</strong></p>
+						<p><a href="mailto:contact@benfeather.dev">contact@benfeather.dev</a></p>
+
+						<hr class="divider my-20" />
+
+						<p><strong>Support requests</strong></p>
+						<p><a href="mailto:support@benfeather.dev">support@benfeather.dev</a></p>
+					</div>
+
+					<div id="card__terms">
+						<button type="button" class="btn" id="show-tcs">
+							<span>Terms of trade</span>
+
+							<svg viewBox="0 0 32 32">
+								<path
+									d="m6.1 30.9 18.9-18.9v11.4c-.2 1.9 1.2 3.7 3.1 3.9s3.7-1.2 3.9-3.1c0-.2 0-.5 0-.7v-19.9c0-2-1.6-3.6-3.5-3.6h-19.9c-2-.1-3.6 1.3-3.8 3.3-.1 1.9 1.4 3.6 3.3 3.7h.5 11.4l-18.9 18.9c-1.4 1.3-1.5 3.5-.2 5s3.5 1.5 5 .2c.1-.1.1-.2.2-.2z"
+									fill="currentColor"
+								/>
+							</svg>
+						</button>
+					</div>
+				</article>
+			</div>
+		</div>
+
+		<div class="drawer">
+			<div class="drawer__content">
+				<button type="button" class="btn" id="close-drawer">
+					<span>Close</span>
+
+					<svg viewBox="0 0 32 32">
+						<g fill="none" stroke="currentColor">
+							<path d="m-.046-.046 32 32" />
+							<path d="m31.954-.046-32 32" />
+						</g>
+					</svg>
+				</button>
+
+				<div class="drawer__body"></div>
+			</div>
+		</div>
+
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>

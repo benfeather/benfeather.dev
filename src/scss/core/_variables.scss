@@ -1,0 +1,38 @@
+// Theme
+// ----------------------------------------
+
+$primary: #738fef;
+$secondary: #4063dd;
+
+$black: #000000;
+$dark: #1f1f26;
+$medium: #545464;
+$light: #e8e8e8;
+$white: #ffffff;
+
+// Typography
+// ----------------------------------------
+
+$font-family: 'Poppins', sans-serif;
+
+// Breakpoints
+// ----------------------------------------
+
+$breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+);
+
+// Spacers
+// ----------------------------------------
+
+$spacerIncrement: 5;
+$spacerCount: 10;
+
+// Misc
+// ----------------------------------------
+
+$photo-size: 110px;

@@ -1,0 +1,80 @@
+@use 'sass:math';
+
+#app {
+	position: relative;
+	height: 100%;
+	overflow: auto;
+}
+
+#main {
+	padding: 40px 20px;
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	@include media-breakpoint-up('md') {
+		padding: 40px;
+	}
+}
+
+#card {
+	position: relative;
+	padding-top: math.div($photo-size, 2);
+	width: 100%;
+
+	@include media-breakpoint-up('sm') {
+		max-width: 450px;
+	}
+
+	.photo {
+		position: absolute;
+		top: 0;
+		left: 20px;
+		z-index: 1;
+	}
+
+	.connect {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	&__content {
+		--divider-color: #{$primary};
+
+		position: relative;
+		padding: #{math.div($photo-size, 2) + 20px} 20px 40px 20px;
+		background-color: rgba($white, 0.05);
+		border: 2px solid rgba($primary, 0.3);
+		border-bottom: none;
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+
+		@include media-breakpoint-up('sm') {
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+	}
+
+	&__contact {
+		--divider-color: #{rgba($dark, 0.1)};
+
+		padding: 20px;
+		color: $dark;
+		background-color: $light;
+		border: 2px solid $white;
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+
+		@include media-breakpoint-up('sm') {
+			padding: 20px 40px;
+		}
+	}
+
+	&__terms {
+		padding: 20px;
+		text-align: center;
+	}
+}

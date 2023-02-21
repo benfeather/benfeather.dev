@@ -1,0 +1,25 @@
+.btn {
+	@include btn-reset();
+
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 11px;
+	line-height: 1;
+	color: $primary;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		color: $secondary;
+	}
+
+	span {
+		border-bottom: 1px solid currentColor;
+	}
+
+	svg {
+		display: block;
+		width: 8px;
+		height: 8px;
+	}
+}

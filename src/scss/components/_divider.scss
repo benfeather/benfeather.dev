@@ -1,0 +1,5 @@
+.divider {
+	border: none;
+	border-top: var(--divider-height, 1px) solid var(--divider-color, #{$dark});
+	margin: 0;
+}

@@ -1,0 +1,59 @@
+// Spacing
+// ----------------------------------------
+
+@each $breakpoint in map-keys($breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		$suffix: breakpoint-suffix($breakpoint, $breakpoints);
+
+		@each $prop, $abbrev in (margin: m, padding: p) {
+			@for $i from 0 through $spacerCount {
+				$space: $i * $spacerIncrement;
+
+				.#{$abbrev}-#{$space}#{$suffix} {
+					#{$prop}: #{$space}px !important;
+				}
+				.#{$abbrev}t-#{$space}#{$suffix},
+				.#{$abbrev}y-#{$space}#{$suffix} {
+					#{$prop}-top: #{$space}px !important;
+				}
+				.#{$abbrev}r-#{$space}#{$suffix},
+				.#{$abbrev}x-#{$space}#{$suffix} {
+					#{$prop}-right: #{$space}px !important;
+				}
+				.#{$abbrev}b-#{$space}#{$suffix},
+				.#{$abbrev}y-#{$space}#{$suffix} {
+					#{$prop}-bottom: #{$space}px !important;
+				}
+				.#{$abbrev}l-#{$space}#{$suffix},
+				.#{$abbrev}x-#{$space}#{$suffix} {
+					#{$prop}-left: #{$space}px !important;
+				}
+			}
+		}
+
+		// Some special margin utils
+		.m-auto#{$suffix} {
+			margin: auto !important;
+		}
+
+		.mt-auto#{$suffix},
+		.my-auto#{$suffix} {
+			margin-top: auto !important;
+		}
+
+		.mr-auto#{$suffix},
+		.mx-auto#{$suffix} {
+			margin-right: auto !important;
+		}
+
+		.mb-auto#{$suffix},
+		.my-auto#{$suffix} {
+			margin-bottom: auto !important;
+		}
+
+		.ml-auto#{$suffix},
+		.mx-auto#{$suffix} {
+			margin-left: auto !important;
+		}
+	}
+}

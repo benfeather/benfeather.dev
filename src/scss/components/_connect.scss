@@ -1,0 +1,28 @@
+.connect {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	text-decoration: none;
+	font-size: 11px;
+	color: $primary;
+	white-space: nowrap;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		color: $secondary;
+	}
+
+	svg {
+		display: block;
+		width: 20px;
+		height: 20px;
+	}
+
+	span {
+		display: none;
+
+		@include media-breakpoint-up('sm') {
+			display: block;
+		}
+	}
+}
