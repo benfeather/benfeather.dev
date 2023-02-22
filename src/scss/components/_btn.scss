@@ -7,7 +7,7 @@
 	font-size: 11px;
 	line-height: 1;
 	color: $primary;
-	transition: all 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
 
 	&:hover {
 		color: $secondary;

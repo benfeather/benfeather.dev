@@ -61,7 +61,7 @@
 					</div>
 
 					<div id="card__terms">
-						<button type="button" class="btn" id="show-tcs">
+						<button type="button" class="btn" id="drawer-toggle">
 							<span>Terms of trade</span>
 
 							<svg viewBox="0 0 32 32">
@@ -76,20 +76,96 @@
 			</div>
 		</div>
 
-		<div class="drawer">
+		<div id="drawer" class="drawer">
+			<div class="drawer__backdrop"></div>
+
 			<div class="drawer__content">
-				<button type="button" class="btn" id="close-drawer">
-					<span>Close</span>
+				<button type="button" class="btn drawer__close">
+					<span class="visually-hidden">Close</span>
 
 					<svg viewBox="0 0 32 32">
-						<g fill="none" stroke="currentColor">
+						<g fill="none" stroke="currentColor" stroke-width="2">
 							<path d="m-.046-.046 32 32" />
 							<path d="m31.954-.046-32 32" />
 						</g>
 					</svg>
 				</button>
 
-				<div class="drawer__body"></div>
+				<div class="drawer__body copy">
+					<h2 class="h1">Terms of trade</h2>
+
+					<hr class="divider mt-15 mb-20" />
+
+					<p>
+						Thank you for choosing to host your website with me. Please read the following terms and
+						conditions carefully and let me know if you have any questions or concerns:
+					</p>
+
+					<p>
+						<strong>Acceptable Use:</strong> Your website must comply with all applicable laws and
+						regulations, including those related to intellectual property, privacy, and defamation. I
+						reserve the right to suspend or terminate your account if you use my services for illegal or
+						malicious activities.
+					</p>
+
+					<p>
+						<strong>Payment:</strong> You are responsible for paying all fees associated with your web
+						hosting account. Payment can be made monthly, annually, or on a custom basis as agreed upon
+						between you and me. Failure to make timely payments may result in suspension or termination of
+						your account.
+					</p>
+
+					<p>
+						<strong>Content:</strong> You are solely responsible for the content on your website. You must
+						ensure that your content does not violate any laws or infringe on the intellectual property
+						rights of others. I reserve the right to remove any content that I deem inappropriate or harmful
+						to my services or reputation.
+					</p>
+
+					<p>
+						<strong>Backups:</strong> I make regular backups of the servers, but I cannot guarantee the
+						availability or completeness of these backups. You should regularly backup your own data to
+						ensure that it is not lost in the event of a server failure or other disaster.
+					</p>
+
+					<p>
+						<strong>Uptime:</strong> I strive to provide high uptime for my hosting services, but I cannot
+						guarantee 100% uptime. Scheduled maintenance and unforeseen events such as natural disasters or
+						attacks may result in downtime. I will make every effort to notify you of planned maintenance or
+						downtime in advance.
+					</p>
+
+					<p>
+						<strong>Support:</strong> I provide technical support via email at support@benfeather.dev. I
+						will make every effort to resolve technical issues in a timely and professional manner, but I
+						cannot guarantee a specific resolution time.
+					</p>
+
+					<p>
+						<strong>Termination:</strong> Either you or I may terminate your account at any time with or
+						without cause. If you terminate your account, you are responsible for any fees due up to the
+						termination date. I reserve the right to suspend or terminate your account immediately without
+						notice if I believe that you have violated these terms and conditions.
+					</p>
+
+					<p>
+						<strong>Indemnification:</strong> You agree to indemnify and hold me harmless from any claims,
+						damages, or expenses arising from your use of my services, your website content, or your
+						violation of these terms and conditions.
+					</p>
+
+					<p>
+						<strong>Modification:</strong> I reserve the right to modify these terms and conditions at any
+						time without prior notice. Your continued use of my services after any modification constitutes
+						your acceptance of the modified terms and conditions.
+					</p>
+
+					<p>
+						<strong>Governing Law:</strong> These terms and conditions are governed by the laws of the
+						jurisdiction where our company is located. Any disputes arising from these terms and conditions
+						will be resolved in accordance with the laws of that jurisdiction.
+					</p>
+				</div>
 			</div>
 		</div>
 

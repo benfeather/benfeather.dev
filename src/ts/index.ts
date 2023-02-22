@@ -1,8 +1,9 @@
 import {Drawer} from './components'
 
-const drawer = new Drawer()
-const toggle = document.querySelector('#show-tcs') as HTMLElement
+const drawerEl = document.querySelector('#drawer')
+const drawerToggle = document.querySelector('#drawer-toggle')
 
-toggle.addEventListener('click', () => {
-	drawer.open()
-})
+if (drawerEl && drawerToggle) {
+	const drawer = new Drawer(drawerEl)
+	drawerToggle.addEventListener('click', () => drawer.open())
+}
