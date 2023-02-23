@@ -6,7 +6,7 @@ export default defineConfig(({command}) => ({
 	css: {
 		preprocessorOptions: {
 			scss: {
-				additionalData: `@import "${path.resolve(__dirname, 'src/scss/global')}";`,
+				additionalData: `@import "src/scss/global";`,
 			},
 		},
 	},
